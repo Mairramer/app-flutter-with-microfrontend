@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:micro_core/app/micro_app.dart';
-import 'package:micro_core/app/micro_core_utils.dart';
+
+import 'micro_app.dart';
+import 'micro_core_utils.dart';
 
 abstract class BaseApp {
   List<MicroApp> get microApps;
