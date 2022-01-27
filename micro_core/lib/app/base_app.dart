@@ -10,7 +10,7 @@ abstract class BaseApp {
 
   final Map<String, WidgetBuilderArgs> routes = {};
 
-  void registerRoutes() {
+  void registerRouters() {
     if (baseRoutes.isNotEmpty) routes.addAll(baseRoutes);
     if (microApps.isNotEmpty) {
       for (MicroApp microApp in microApps) {
