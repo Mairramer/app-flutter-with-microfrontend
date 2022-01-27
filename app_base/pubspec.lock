@@ -95,6 +95,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  flutter_mobx:
+    dependency: transitive
+    description:
+      name: flutter_mobx
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.3+2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -138,6 +145,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  micro_app_dependencies:
+    dependency: "direct main"
+    description:
+      path: "../micro_app_dependencies"
+      relative: true
+    source: path
+    version: "0.0.1"
   micro_app_home:
     dependency: "direct main"
     description:
@@ -159,6 +173,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  mobx:
+    dependency: transitive
+    description:
+      name: mobx
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.6+1"
   path:
     dependency: transitive
     description:
