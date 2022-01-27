@@ -1,19 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:micro_app_home/micro_app_home.dart';
+import 'package:micro_app_login/micro_app_login.dart';
+import 'package:micro_core/micro_core.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget with BaseApp {
+  MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
+    super.registerRouters();
+
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      body: Container(),
+      navigatorKey: navigatorKey,
+      onGenerateRoute: super.generateRoute,
+      initialRoute: '/login',
     );
   }
+
+  @override
+  Map<String, WidgetBuilderArgs> get baseRoutes => {};
+
+  @override
+  List<MicroApp> get microApps => [
+        MicroAppHomeResolver(),
+        MicroAppLoginResolver(),
+      ];
 }
