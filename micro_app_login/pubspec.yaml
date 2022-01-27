@@ -15,6 +15,8 @@ dependencies:
     path: ../micro_core
   micro_app_commons:
     path: ../micro_app_commons
+  micro_app_dependencies:
+    path: ../micro_app_dependencies
 
 dev_dependencies:
   flutter_test:
