@@ -12,11 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   micro_core:
-    path: ../micro_core
+    path: ../../micro_core
   micro_app_commons:
-    path: ../micro_app_commons
+    path: ../../micro_app_commons
   micro_app_dependencies:
-    path: ../micro_app_dependencies
+    path: ../../micro_app_dependencies
 
 dev_dependencies:
   flutter_test:
