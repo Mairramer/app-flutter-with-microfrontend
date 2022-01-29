@@ -16,9 +16,9 @@ dependencies:
   micro_core:
     path: ../micro_core
   micro_app_login:
-    path: ../micro_app_login
+    path: ../micro_apps/micro_app_login
   micro_app_home:
-    path: ../micro_app_home
+    path: ../micro_apps/micro_app_home
   micro_app_commons:
     path: ../micro_app_commons
   micro_app_dependencies:
